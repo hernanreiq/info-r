@@ -1,1 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    box-shadow: 2px 2px 5px black;
+    opacity: 0.9;
+}
+
+.navbar .nav-item .nav-link {
+    color: white;
+}
+
+.main-header {
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    min-height: 350px;
+}
+
+.background-overlay,
+.informacion-section {
+    background-color: rgba(0, 170, 255, 0.3);
+}
+
+a.ancla {
+    position: relative;
+    top: -60px;
+}
+
+input,
+button,
+a {
+    border-radius: 0 !important;
+}
+
+div.redes i:hover {
+    color: rgba(0, 170, 255, 1);
+    cursor: pointer;
+}
+
+form label {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

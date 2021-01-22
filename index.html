@@ -12,13 +12,367 @@
 
 <body>
     <header>
-        <nav>
-
+        <!-- MENU DE NAVEGACION -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-info fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#portada">
+                    <img src="img/logo.jpg" alt="" width="30" height="30" style="border-radius: 5px;"> Info R
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#suscribirse">Suscribirse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#informacion">Información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipo">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <a class="ancla" name="portada"></a>
+        <!-- PORTADA DE LA PAGINA -->
+        <div class="main-header pt-5">
+            <div class="background-overlay text-white py-5">
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                            <img src="img/libro.jpg" alt="Imagen del libro" class="img-portada img-fluid w-100 d-none d-md-block">
+                        </div>
+                        <div class="col-md-6 text-center my-5 justify-content-center align-self-center text-portada">
+                            <h1>Tu vales por lo que sabes.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, totam?</p>
+                            <a href="#" class="btn btn-warning btn-lg">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+
+    <a class="ancla" name="suscribirse"></a>
+    <!-- NEWSLETTER -->
+    <section class="bg-info text-white py-5">
+        <div class="container contenedor-suscribirse">
+            <h2>Suscríbete a nuestro boletín informativo</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control form-control-lg my-1" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="col-md-4">
+                    <input type="email" class="form-control form-control-lg my-1" placeholder="Ingresa tu correo">
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-warning btn-lg w-100 my-1">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- INFORMACION -->
+    <a class="ancla" name="informacion"></a>
+    <section class="py-5 informacion-section">
+        <div class="container contenedor-proceo-libro">
+            <h2 class="text-info">Así fue creado el libro</h2>
+            <div class="row">
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="img/inspiracion.jpeg" alt="inspiracion" class="card-img-top">
+                        <div class="card-body text-white bg-dark">
+                            <h5 class="card-title">Inspiración</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nobis!</p>
+                            <a href="#" class="btn btn-warning">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="img/motivacion.jpg" alt="motivacion" class="card-img-top">
+                        <div class="card-body text-white bg-dark">
+                            <h5 class="card-title">Motivación</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, qui!</p>
+                            <a href="#" class="btn btn-warning">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="img/investigacion.jpeg" alt="investigacion" class="card-img-top">
+                        <div class="card-body text-white bg-dark">
+                            <h5 class="card-title">Proceso</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eaque.</p>
+                            <a href="#" class="btn btn-warning">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 my-3">
+                    <div class="card">
+                        <img src="img/proceso.jpeg" alt="resultado" class="card-img-top">
+                        <div class="card-body text-white bg-dark">
+                            <h5 class="card-title">Conclusión</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, beatae!</p>
+                            <a href="#" class="btn btn-warning">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-info text-center">
+        <div class="container contenedor-pregunta">
+            <div class="row">
+                <div class="m-5 text-white">
+                    <h3 class="mb-4">¿Por qué ese nombre para el libro?</h3>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi accusantium ratione blanditiis suscipit rem quo odio. Quam architecto quaerat maxime at, inventore itaque vero, quisquam aliquid cumque odio assumenda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 informacion-section">
+        <div class="container contenedor-acordeon">
+            <h2 class="text-center text-info">Preguntas frecuentes</h2>
+            <div class="accordion my-5" id="accordionExample">
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué puedo esperar del libro?
+                      </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body bg-info">
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem, at ad unde atque tempora reiciendis perspiciatis similique necessitatibus officiis nisi dolor voluptatibus amet! Esse minus facere voluptate tenetur quis
+                                maiores eligendi, dolor eaque! Ipsa minima modi facere a incidunt!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Dónde puedo obtenerlo en físico?
+                      </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body bg-info">
+                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa cumque nihil aut sint asperiores voluptate similique sed ad dolore? Alias dicta vel fugit. Repellendus sint, distinctio deleniti quaerat temporibus dolorem? Eius,
+                                ex illum repellendus velit, debitis autem est error aperiam ab quod porro ipsa sed dolores, aut sapiente ad? Laudantium?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cuando se va a desarrollar la segunda parte?
+                      </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body bg-info">
+                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nam vitae incidunt officiis provident debitis repudiandae magnam architecto excepturi praesentium possimus dolor laudantium expedita a perferendis assumenda
+                                quis, iusto reprehenderit unde veritatis, ratione numquam ullam recusandae! <br><br> Doloremque a culpa tenetur asperiores, animi nisi possimus eaque cumque natus. Adipisci possimus quia veritatis modi perferendis, officia
+                                omnis ipsam quaerat facilis nesciunt odit corrupti dolores suscipit porro minima velit facere. Magnam ad illum dicta voluptates consequuntur amet suscipit dolore molestias ut quisquam magni numquam ratione dolores, consequatur
+                                impedit. Voluptatum ut doloribus voluptas corrupti. Amet, labore perferendis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EQUIPO -->
+    <a class="ancla" name="equipo"></a>
+    <section class="py-5 bg-info">
+        <div class="container contenedor-equipo">
+            <h2 class="h1 text-white py-1 text-center">Mi equipo</h2>
+            <p class="text-white text-justify pb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum architecto modi minus rem nostrum placeat soluta odit reprehenderit distinctio, cupiditate tenetur perferendis at qui repellendus voluptates. Commodi nihil, sed labore doloribus
+                laborum culpa obcaecati sunt eaque necessitatibus nulla. Illo repellendus eveniet libero dolore cumque incidunt doloremque iste praesentium quia accusantium.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <div class="card-body bg-dark">
+                            <img src="img/ronny.png" class="card-img-top img-lg-fluid" alt="persona">
+                            <h3 class="text-center text-white my-2">Ronny Heisendolf</h3>
+                            <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima maxime facere ad dolor assumenda.</p>
+                            <div class="d-flex flex-row justify-content-center text-white">
+                                <div class="px-2 redes">
+                                    <i class="h1 fab fa-linkedin"></i>
+                                </div>
+                                <div class="px-2 redes">
+                                    <i class="h1 fas fa-envelope"></i>
+                                </div>
+                                <div class="px-2 redes">
+                                    <i class="h1 fab fa-facebook-square"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <div class="card-body bg-dark">
+                            <img src="img/scarchy.png" class="card-img-top img-lg-fluid" alt="persona">
+                            <h3 class="text-center text-white my-2">Scarchy Queen</h3>
+                            <p class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quo tempore reprehenderit voluptatem adipisci cumque.</p>
+                            <div class="d-flex flex-row justify-content-center text-white">
+                                <div class="px-2 redes">
+                                    <i class="h1 fab fa-linkedin"></i>
+                                </div>
+                                <div class="px-2 redes">
+                                    <i class="h1 fas fa-envelope"></i>
+                                </div>
+                                <div class="px-2 redes">
+                                    <i class="h1 fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <div class="card-body bg-dark">
+                            <img src="img/raymond.png" class="card-img-top img-lg-fluid" alt="persona">
+                            <h3 class="text-center text-white my-2">Raymond Martínez</h3>
+                            <p class="text-justify text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio fugiat blanditiis libero minima neque odit!</p>
+                            <div class="d-flex flex-row justify-content-center text-white">
+                                <div class="px-2 redes">
+                                    <i class="h1 fab fa-linkedin"></i>
+                                </div>
+                                <div class="px-2 redes">
+                                    <i class="h1 fas fa-envelope"></i>
+                                </div>
+                                <div class="px-2 redes">
+                                    <i class="h1 fab fa-telegram-plane"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+    <a class="ancla" name="contacto"></a>
+    <section class="py-5 informacion-section">
+        <div class="container contenedor-redes">
+            <div class="row">
+                <div class="col-md-12 my-3">
+                    <h2 class="h1 text-info text-center my-3">Contáctanos</h2>
+                    <form class="bg-info p-sm-5 p-3">
+                        <div class="form-group">
+                            <label for="exampleInputAsunto">Asunto</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-dark">
+                                        <i class="fas fa-question-circle text-info"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="exampleInputAsunto" placeholder="Asunto">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo electrónico</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-dark">
+                                        <i class="fas fa-at text-info"></i>
+                                    </div>
+                                </div>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                            </div>
+                            <small id="emailHelp" class="form-text text-danger">*Nosotros nunca compartiremos tu correo electrónico.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea">Mensaje</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text bg-dark">
+                                        <i class="far fa-envelope-open text-info mb-auto pt-1"></i>
+                                    </div>
+                                </div>
+                                <textarea class="form-control" id="exampleTextarea" cols="30" rows="10" style="resize: none;" placeholder="Mensaje"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-warning w-100 text-dark">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 my-3">
+                    <div class="card my-3 bg-dark">
+                        <div class="body-card text-center p-3">
+                            <i class="text-info display-3 fab fa-instagram"></i><br>
+                            <button class="btn btn-warning">Instagram</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 my-3">
+                    <div class="card my-3 bg-dark">
+                        <div class="body-card text-center p-3">
+                            <i class="text-info display-3 fab fa-linkedin"></i><br>
+                            <button class="btn btn-warning">LinkedIn</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 my-3">
+                    <div class="card my-3 bg-dark">
+                        <div class="body-card text-center p-3">
+                            <i class="text-info display-3 fab fa-facebook-square"></i><br>
+                            <button class="btn btn-warning">Facebook</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 my-3">
+                    <div class="card my-3 bg-dark">
+                        <div class="body-card text-center p-3">
+                            <i class="text-info display-3 fab fa-youtube"></i><br>
+                            <button class="btn btn-warning">YouTube</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 my-3">
+                    <div class="card my-3 bg-dark">
+                        <div class="body-card text-center p-3">
+                            <i class="text-info display-3 fab fa-reddit-square"></i><br>
+                            <button class="btn btn-warning">Reddit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 my-3">
+                    <div class="card my-3 bg-dark">
+                        <div class="body-card text-center p-3">
+                            <i class="text-info display-3 fab fa-blogger-b"></i><br>
+                            <button class="btn btn-warning">Blogger</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="bg-dark">
+        <div class="container py-4 justify-content-center align-self-center">
+            <p class="text-center text-white my-auto">Desarrollo y diseño web por:
+                <a href="https://bit.ly/hernanreiq" target="_blank" class="text-warning">Hernan.Reiq</a>
+            </p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
 </body>
 
